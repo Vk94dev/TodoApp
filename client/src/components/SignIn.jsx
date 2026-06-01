@@ -25,11 +25,12 @@ const navigate = useNavigate();
 
 const handleSubmit = (e)=>{
   e.preventDefault();
-  setActive("dashboard");
-  // localStorage.setItem("token",email);
-  localStorage.setItem("active","dashboard");
+  // setActive("dashboard");
+  localStorage.setItem("token",email);
+  // localStorage.setItem("active","dashboard");
   
   navigate("/");
+  window.location.reload();
 }
 
 

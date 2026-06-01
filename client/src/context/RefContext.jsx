@@ -7,13 +7,13 @@ export const contextProvider = createContext();
 const RefContext = ({children}) => {
 
 const token = localStorage.getItem("token");
-// const [login,setLogin]= useState(token);
+const [login,setLogin]= useState(token);
 // const [active,setActive] = useState(localStorage.getItem("token") || "dashboard");
 
 
-const [login,setLogin]= useState(true);
+// const [login,setLogin]= useState(true);
 // const [open,setOpen] = useState(false);
- const [active,setActive] = useState("");
+ const [active,setActive] = useState("dashboard");
 const [showedit,setShowedit] = useState(false);
 const [addtask,setAddtask] = useState(false);
 const [info,setInfo] = useState(false);
