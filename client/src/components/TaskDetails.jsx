@@ -5,6 +5,12 @@ import { MdDelete } from "react-icons/md";
 import { RiEditBoxFill } from "react-icons/ri";
 
 function TaskDetails() {
+
+ const handleEditTask = ()=>{
+   return (<EditTask />)
+ }
+
+
   return (
     <div >
               <div className='flex flex-row '>
@@ -48,8 +54,8 @@ function TaskDetails() {
                    </div>
 
                   <div className=' flex flex-row justify-end items-end right-0 bottom-0 sticky z-10 bg-[#fbfbfb] pb-2 pt-1 gap-3 '>
-                    <button className='border rounded-md p-1 bg-[#FF6767] text-white'> <MdDelete className='text-2xl' /></button>
-                    <button  className='border rounded-md p-1 bg-[#FF6767] text-white'><RiEditBoxFill className='text-2xl'  /></button>
+                    <button className='border rounded-md p-1 bg-[#FF6767] text-white cursor-pointer' onClick={()=>alert("task is deleted")} > <MdDelete className='text-2xl' /></button>
+                    <button  className='border rounded-md p-1 bg-[#FF6767] text-white cursor-pointer' onClick={()=>alert("task is edited")}><RiEditBoxFill className='text-2xl'  /></button>
                   </div>
 
 

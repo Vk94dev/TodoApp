@@ -7,6 +7,12 @@ import { useNavigate } from 'react-router-dom'
 const ChangePassword = () => {
  
  const navigate = useNavigate();
+
+ const updatePassword = (e)=>{
+    e.preventDefault();
+    alert("password is changed");
+    navigate(-1);
+ }
  
     return (
    <div className='w-full h-full   px-[30%] pt-[2.6%] bg-[#fbfbfb] flex flex-col justify-between'>
@@ -47,8 +53,8 @@ const ChangePassword = () => {
                             
    
                            <div className='flex flex-row gap-2 mt-5'>
-                               <button className=' bg-[#F24E1E] px-[3%] text-sm text-white py-1 rounded-md'>Update Password</button>
-                               <button className=' bg-[#F24E1E] px-[3%] text-sm text-white py-1 rounded-md' onClick={()=>navigate("/profile")}>Cancel</button>
+                               <button className=' bg-[#F24E1E] px-[3%] text-sm text-white py-1 rounded-md cursor-pointer'onClick={updatePassword}>Update Password</button>
+                               <button className=' bg-[#F24E1E] px-[3%] text-sm text-white py-1 rounded-md cursor-pointer' onClick={()=>navigate("/profile")}>Cancel</button>
                               
                            </div>
                     </div>

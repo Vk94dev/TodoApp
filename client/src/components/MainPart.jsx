@@ -19,6 +19,7 @@ const MainPart = () => {
   const{active,setActive,login,setLogin} = useContext(contextProvider);
 
 useEffect(()=>{
+  localStorage.setItem("active",active);
 console.log(active);
 },[active])
  
@@ -67,7 +68,7 @@ console.log(active);
               </div>
 
               <div className='pb-1'>
-                  <button onClick={()=>(setLogin(!login),navigate("/"),localStorage.removeItem("token"))} className='h-10 w-[50%]  flex flex-row gap-3  items-center rounded-xl px-4 cursor-pointer  hover:bg-white hover:text-[#FF6767] '>
+                  <button onClick={()=>(setLogin(!login),navigate("/"),localStorage.removeItem("token"),localStorage.removeItem("active"))} className='h-10 w-[50%]  flex flex-row gap-3  items-center rounded-xl px-4 cursor-pointer  hover:bg-white hover:text-[#FF6767] '>
                  <MdLogout  className='text-2xl' />
                  <span className='text-sm font-semibold'>Logout</span>
                </button>

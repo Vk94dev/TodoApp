@@ -71,7 +71,7 @@ const {info,setInfo} = useContext(contextProvider);
                         <div className='flex flex-row gap-2 mt-5'>
                             <button className=' bg-[#F24E1E] px-[3%] text-sm text-white py-1 rounded-md cursor-pointer' onClick={()=>navigate("/updateInfo")} >Update Info</button>
                             {/* {info && (<UpdateInfo />)} */}
-                            <button className=' bg-[#F24E1E] px-[3%] text-sm text-white py-1 rounded-md' onClick={()=>navigate("/changepwd")}>change Password</button>
+                            <button className=' bg-[#F24E1E] px-[3%] text-sm text-white py-1 rounded-md cursor-pointer' onClick={()=>navigate("/changepwd")}>change Password</button>
                            
                         </div>
                  </div>

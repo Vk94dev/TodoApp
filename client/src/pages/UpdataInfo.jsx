@@ -10,6 +10,13 @@ const {info,setInfo} = useContext(contextProvider)
 
 const navigate = useNavigate();
 
+const handleSaveDetails = (e)=>{
+    e.preventDefault();
+    alert("information is updated");
+    navigate(-1);
+
+}
+
   return (
     // <div className='bg-[#fbfbfb] h-screen'>
     //   <Navbar />
@@ -64,8 +71,8 @@ const navigate = useNavigate();
                         </div>
 
                         <div className='flex flex-row gap-2 mt-5'>
-                            <button className=' bg-[#F24E1E] px-[3%] text-sm text-white py-1 rounded-md' >Save Changes</button>
-                            <button className=' bg-[#F24E1E] px-[3%] text-sm text-white py-1 rounded-md' onClick={()=>navigate("/profile")}>Cancel</button>
+                            <button className=' bg-[#F24E1E] px-[3%] text-sm text-white py-1 rounded-md cursor-pointer' onClick={handleSaveDetails} >Save Changes</button>
+                            <button className=' bg-[#F24E1E] px-[3%] text-sm text-white py-1 rounded-md cursor-pointer' onClick={()=>navigate("/profile")}>Cancel</button>
                            
                         </div>
                  </div>

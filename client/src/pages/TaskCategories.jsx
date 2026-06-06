@@ -64,8 +64,8 @@ const TaskCategories = () => {
             </button>
             {editstatus && (<EditTaskStatus />)}
 
-            
-            <button className='bg-[#F24E1E] text-white px-[2%] rounded-md py-[0.5%] flex flex-row'>
+
+            <button  className='bg-[#F24E1E] text-white px-[2%] rounded-md py-[0.5%] flex flex-row cursor-pointer' onClick={()=>alert("task status is deleted")} >
                 <MdDelete className='pt-1 text-xl' />
                 <p>Delete</p>
             </button>
@@ -82,7 +82,7 @@ const TaskCategories = () => {
                 <RiEditBoxFill className='pt-1 text-xl' />
                 <p>Edit</p>
             </button>
-            <button className='bg-[#F24E1E] text-white px-[2%] rounded-md py-[0.5%] flex flex-row'>
+            <button className='bg-[#F24E1E] text-white px-[2%] rounded-md py-[0.5%] flex flex-row cursor-pointer' onClick={()=>alert("task status is deleted")}>
                 <MdDelete className='pt-1 text-xl' />
                 <p>Delete</p>
             </button>
@@ -98,7 +98,7 @@ const TaskCategories = () => {
               <RiEditBoxFill className='pt-1 text-xl'/>
               <p>Edit</p>
             </button>
-            <button className=' px-[2%] bg-[#F24E1E] text-white rounded-md py-[0.5%] flex flex-row'>
+            <button className=' px-[2%] bg-[#F24E1E] text-white rounded-md py-[0.5%] flex flex-row cursor-pointer' onClick={()=>alert("task status is deleted")}>
                 <MdDelete className='pt-1 text-xl' />
                 <p>Delete</p>
             </button>
@@ -146,7 +146,7 @@ const TaskCategories = () => {
              <p>Edit</p>
             </button>
             {editpriority && (<EditTaskPriority />)}
-            <button className='bg-[#F24E1E] text-white px-[2%] rounded-md py-[0.5%] flex flex-row'>
+            <button className='bg-[#F24E1E] text-white px-[2%] rounded-md py-[0.5%] flex flex-row cursor-pointer' onClick={()=>alert("task priority is deleted")}>
                 <MdDelete className='pt-1 text-xl' />
                 <p>Delete</p>
             </button>
@@ -163,7 +163,7 @@ const TaskCategories = () => {
                 <RiEditBoxFill className='pt-1 text-xl' />
                 <p>Edit</p>
             </button>
-            <button className='bg-[#F24E1E] text-white px-[2%] rounded-md py-[0.5%] flex flex-row'>
+            <button className='bg-[#F24E1E] text-white px-[2%] rounded-md py-[0.5%] flex flex-row cursor-pointer' onClick={()=>alert("task priority is deleted")}>
                 <MdDelete className='pt-1 text-xl' />
                 <p>Delete</p>
             </button>
@@ -179,7 +179,7 @@ const TaskCategories = () => {
               <RiEditBoxFill className='pt-1 text-xl'/>
               <p>Edit</p>
             </button>
-            <button className=' px-[2%] bg-[#F24E1E] text-white rounded-md py-[0.5%] flex flex-row'>
+            <button className=' px-[2%] bg-[#F24E1E] text-white rounded-md py-[0.5%] flex flex-row cursor-pointer' onClick={()=>alert("task priority is deleted")}>
                 <MdDelete className='pt-1 text-xl' />
                 <p>Delete</p>
             </button>

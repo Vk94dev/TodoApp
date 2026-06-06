@@ -1,10 +1,18 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import UploadImage from "../utils/images/uploadImage.png"
 import { contextProvider } from '../context/refContext'
 
 const AddTask = () => {
 
    const{addtask,setAddtask} = useContext(contextProvider);
+   const [title,setTitle] = useState("");
+  const [desc,setDesc] = useState("");
+
+   const handleCreateTask = (e)=>{
+    e.preventDefault();
+    alert("task created");
+    setAddtask(!addtask);
+   }
 
   return (
     <div className='inset-0 flex top-0 left-0 justify-center items-center fixed z-50 '>
@@ -19,7 +27,7 @@ const AddTask = () => {
          <div className='h-full w-full border border-zinc-400 py-2 px-4 flex flex-col gap-1'>
             <div className='flex flex-col gap-1'>
                 <label className='text-sm font-semibold' htmlFor="">Title</label>
-                <input type="text" className='w-[70%] border rounded-sm py-0.5 outline-none px-2' />
+                <input type="text" className='w-[70%] border rounded-sm py-0.5 outline-none px-2' onChange={(e)=>setTitle(e.target.value)} />
             </div>
 
             <div className='flex flex-col gap-1'>
@@ -53,7 +61,7 @@ const AddTask = () => {
   <div  className='flex flex-row'>
     <div className='flex flex-col gap-1 w-full'>
                 <label className='text-sm font-semibold' htmlFor="">Task Description</label>
-                <textarea type="text"  placeholder='Start Writing here...' className='w-[87%] border rounded-sm py-1 outline-none px-3 resize-none h-30 text-sm' />
+                <textarea type="text"  placeholder='Start Writing here...' className='w-[87%] border rounded-sm py-1 outline-none px-3 resize-none h-30 text-sm' onChange={(e)=>setDesc(e.target.value)}/>
             </div>
 
     <div className='flex flex-col gap-1 w-[25%] '>
@@ -72,7 +80,7 @@ const AddTask = () => {
          </div>
 
          <div>
-               <button className=' ml-[2.5%] py-1.5 px-6 bg-[#F24E1E] rounded-md text-white text-sm'>Done</button>
+               <button className=' ml-[2.5%] py-1.5 px-6 bg-[#F24E1E] rounded-md text-white text-sm cursor-pointer' onClick={handleCreateTask}>Done</button>
          </div>
            
          

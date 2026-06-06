@@ -13,7 +13,7 @@ const [login,setLogin]= useState(token);
 
 // const [login,setLogin]= useState(true);
 // const [open,setOpen] = useState(false);
- const [active,setActive] = useState("dashboard");
+ const [active,setActive] = useState(localStorage.getItem("active") || "dashboard");
 const [showedit,setShowedit] = useState(false);
 const [addtask,setAddtask] = useState(false);
 const [info,setInfo] = useState(false);

@@ -1,14 +1,23 @@
-import React, { useContext, useEffect } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import UploadImage from "../utils/images/uploadImage.png"
 import { contextProvider } from '../context/refContext'
+import { useSearchParams } from 'react-router-dom';
 
 const EditTask = () => {
 
    const{showedit,setShowedit} = useContext(contextProvider);
-useEffect(()=>{
-console.log(showedit);
-},[showedit])
-   
+
+   const [title,setTitle] = useState("");
+   const [date,setDate] = useState("");
+   const [textarea,setTextarea] = useState("");
+   const [priority,setPriority] = useState("");
+   const [image,setImage]   = useState("");
+
+ const handleEditTask = (e)=>{
+    e.preventDefault();
+    alert("Task is edited");
+    setShowedit(!showedit);
+ }
 
   return (
     <div className='inset-0 flex top-0 left-0 justify-center items-center fixed z-50 '>
@@ -23,12 +32,12 @@ console.log(showedit);
          <div className='h-full w-full border border-zinc-400 py-2 px-4 flex flex-col gap-1'>
             <div className='flex flex-col gap-1'>
                 <label className='text-sm font-semibold' htmlFor="">Title</label>
-                <input type="text" className='w-[70%] border rounded-sm py-0.5 outline-none px-2' />
+                <input type="text" value={title} onChange={(e)=>setTitle(e.target.value)} className='w-[70%] border rounded-sm py-0.5 outline-none px-2' />
             </div>
 
             <div className='flex flex-col gap-1'>
                 <label className='text-sm font-semibold' htmlFor="">Date</label>
-                <input type="date"  className='w-[70%] border rounded-sm py-0.5 outline-none px-2' />
+                <input type="date" value={date} onChange={(e)=>setDate(e.target.value)}  className='w-[70%] border rounded-sm py-0.5 outline-none px-2' />
             </div>
 
             <div className='flex flex-col gap-[2%]'>
@@ -76,7 +85,7 @@ console.log(showedit);
          </div>
 
          <div>
-               <button className=' ml-[2.5%] py-1.5 px-6 bg-[#F24E1E] rounded-md text-white text-sm'>Done</button>
+               <button className=' ml-[2.5%] py-1.5 px-6 bg-[#F24E1E] rounded-md text-white text-sm cursor-pointer' onClick={handleEditTask}>Done</button>
          </div>
            
          

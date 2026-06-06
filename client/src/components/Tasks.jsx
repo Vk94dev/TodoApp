@@ -15,21 +15,20 @@ const [open,setOpen] = useState(false);
 
 const handleOption = (action) => {
    if(action ==="vital"){
-        console.log("vital task");
+        alert("vital task");
     }
 
     if (action === "edit") {
       setShowedit(true);
     
-    // console.log("edit task");
     }
 
     if (action === "delete") {
-      console.log("Delete clicked");
+      alert("Delete clicked");
     }
 
     if (action === "finish") {
-      console.log("finish clicked");
+      alert("finish clicked");
     }
 
     setOpen(false);
@@ -71,7 +70,7 @@ const handleOption = (action) => {
             <div className="absolute right-0 mt-2 w-25 bg-[#fbfbfb] border-zinc-100 rounded-md shadow-lg z-10">
           <button
             className="block w-full text-left px-4 py-1 hover:bg-gray-100 cursor-pointer"
-            onClick={() => handleOption("delete")}
+            onClick={() => handleOption("vital")}
           >
             Vital
           </button>
@@ -86,14 +85,14 @@ const handleOption = (action) => {
 
           <button
             className="block w-full text-left px-4 py-1 hover:bg-gray-100 cursor-pointer"
-            onClick={() => handleOption("favorite")}
+            onClick={() => handleOption("delete")}
           >
             Delete
           </button>
           
           <button
             className="block w-full text-left px-4 py-1 hover:bg-gray-100 cursor-pointer"
-            onClick={() => handleOption("favorite")}
+            onClick={() => handleOption("finish")}
           >
             Finish
           </button>
