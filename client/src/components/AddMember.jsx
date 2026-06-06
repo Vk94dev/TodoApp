@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { FaAngleDown } from "react-icons/fa";
 import Avatar from "../utils/images/avatar.avif"
-import { contextProvider } from '../context/refContext';
+import { contextProvider } from '../context/RefContext';
 
 const AddMember = () => {
 

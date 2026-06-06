@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { FaUserPlus } from "react-icons/fa6";
-import { contextProvider } from '../context/refContext';
+import { contextProvider } from '../context/RefContext';
 import  MemberImage from "../utils/images/avatar.avif"
 
 

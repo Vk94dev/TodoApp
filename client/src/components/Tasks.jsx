@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react'
 import { IoEllipsisHorizontalOutline } from "react-icons/io5";
 import Dog from "../utils/images/Dog.png"
-import { contextProvider } from '../context/refContext';
+import { contextProvider } from '../context/RefContext';
 import EditTask from './EditTask';
 import { useNavigate } from 'react-router-dom';
 

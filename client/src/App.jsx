@@ -18,7 +18,7 @@ import CreateCategories from './pages/CreateCategories';
 import EditTask from './components/EditTask';
 import UpdateInfo from './pages/UpdataInfo';
 import AddMember from './components/AddMember';
-import { contextProvider } from './context/refContext';
+import { contextProvider } from './context/RefContext';
 import {Route,Routes} from "react-router-dom"
 import Setting from './pages/Setting';
 import Help from './pages/Help';

@@ -15,7 +15,7 @@ import CompletedTask from '../components/CompletedTask.jsx';
 import DashHeader from '../components/DashHeader.jsx';
 
 import AddTask from '../components/AddTask.jsx';
-import { contextProvider } from '../context/refContext.jsx';
+import { contextProvider } from '../context/RefContext.jsx';
 import AddMember from '../components/AddMember.jsx';
 
 

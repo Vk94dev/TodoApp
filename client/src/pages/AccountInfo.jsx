@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import Avatar from "../utils/images/avatar.avif"
 import { useNavigate } from 'react-router-dom'
-import { contextProvider } from '../context/refContext';
+import { contextProvider } from '../context/RefContext';
 import UpdateInfo from './UpdataInfo';
 
 

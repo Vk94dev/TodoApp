@@ -4,7 +4,7 @@ import { FaPlus } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
 import { RiEditBoxFill } from "react-icons/ri";
 import { useNavigate } from 'react-router-dom';
-import { contextProvider } from '../context/refContext';
+import { contextProvider } from '../context/RefContext';
 import AddTaskPriority from '../components/AddTaskPriority';
 import EditTaskPriority from '../components/EditTaskPriority';
 import EditTaskStatus from '../components/EditTaskStatus';

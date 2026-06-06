@@ -9,7 +9,7 @@ import { MdLock } from "react-icons/md";
 import FacebookLogo from "../utils/images/facebook.png"
 import XLogo from "../utils/images/xlogo.jpg"
 import { FcGoogle } from "react-icons/fc";
-import { contextProvider } from '../context/refContext';
+import { contextProvider } from '../context/RefContext';
 import { useNavigate } from 'react-router-dom';
 // import { SignInPage } from '../api/api';
 

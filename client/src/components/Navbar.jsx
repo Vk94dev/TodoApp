@@ -2,7 +2,7 @@ import React, { useContext, useEffect } from 'react'
 import { IoSearch } from "react-icons/io5";
 import { IoIosNotificationsOutline } from "react-icons/io";
 import { SlCalender } from "react-icons/sl";
-import { contextProvider } from '../context/refContext';
+import { contextProvider } from '../context/RefContext';
 
 
 

@@ -8,7 +8,7 @@ import { IoMdHelpCircle } from "react-icons/io";
 import { MdLogout } from "react-icons/md";
 import { BiTask } from "react-icons/bi";
 import Avatar from "../utils/images/avatar.avif"
-import { contextProvider } from '../context/refContext';
+import { contextProvider } from '../context/RefContext';
 import {Link, useNavigate} from "react-router-dom"
 
 

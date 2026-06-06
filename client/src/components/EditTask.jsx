@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react'
 import UploadImage from "../utils/images/uploadImage.png"
-import { contextProvider } from '../context/refContext'
+import { contextProvider } from '../context/RefContext'
 import { useSearchParams } from 'react-router-dom';
 
 const EditTask = () => {

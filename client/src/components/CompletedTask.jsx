@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import Dog from "../utils/images/Dog.png"
 import { IoEllipsisHorizontalOutline } from "react-icons/io5";
-import { contextProvider } from '../context/refContext';
+import { contextProvider } from '../context/RefContext';
 import { useNavigate } from 'react-router-dom';
 
 const CompletedTask = () => {

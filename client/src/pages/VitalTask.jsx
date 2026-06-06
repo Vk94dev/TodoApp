@@ -6,7 +6,7 @@ import Dog from "../utils/images/Dog.png"
 
 import TaskDetails from "../components/TaskDetails"
 import Tasks from "../components/Tasks.jsx"
-import { contextProvider } from '../context/refContext.jsx';
+import { contextProvider } from '../context/RefContext.jsx';
 
 const VitalTask = () => {
 
